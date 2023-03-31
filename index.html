@@ -1,10 +1,372 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Loading</title>
-    <meta http-equiv="refresh" content="0; URL=https://axviii3.is-a.dev">
-  </head>
+<html lang="en">
 
-  <link rel="canonical" href="https://axviii3.is-a.dev">
+<head>
+    <!-- Meta Utility Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="The official website for AXVIII3. Smile :)">
+    <meta name="keywords"
+        content="AXVIII3, GameDev, WebDev, Computer Enthusiast, Game Developer, Web Developer, Youtuber">
+    <meta name="robots" content="INDEX, FOLLOW">
+
+    <!-- JS CDNs -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- CSS CDNs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS and JS links -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/index.js" defer></script>
+
+    <!-- Branding -->
+    <title>AXVIII3</title>
+    <link rel="icon" href="MEDIA/IMAGES/Branding/Smiley Orange.png">
+</head>
+
+<body>
+    <!-- Screen Size Dialog -->
+    <section id="screenSize">
+        <h2 class="title">This webpage is currently unsuitable for view in this screen size. Sorry for the inconvinience. I am still working on making this webpage responsive. Appreciate your patience! This webpage is currently viewable in all devices with pixel width 1200 - 1950px
+        <br>
+        <br>
+        Smile :)
+        </h2>
+    </section>
+
+    <!-- Cursor -->
+
+    <!-- Pre-Loader -->
+    <section id="preloader">
+        <div id="particles-background" class="vertical-centered-box"></div>
+        <div id="particles-foreground" class="vertical-centered-box"></div>
+        <h2 class="preloaderTyped"></h2>
+    </section>
+    <section id="preloaderAfter"></section>
+
+    <!-- Splash Screen -->
+    <section id="splash">
+        <h2 class="splashTyped"></h2>
+        <p>Click anywhere to Skip</p>
+    </section>
+    <section id="splashAfter"></section>
+
+    <!-- Scroll Bar -->
+    <div id="scrollBar"></div>
+
+    <!-- Menu Bar -->
+    <section class="menu">
+        <a id="nav-logo" href="#"><img src="MEDIA/IMAGES/Branding/Smiley White.png" alt="AXVIII3"></a>
+        <input type="checkbox" class="toggler" id="hamburger-toggle">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu-body">
+            <div>
+                <div id="menu-text">
+                    <div class="line">
+                        <a href="#landing" class="word fancy">
+                            <span class="outer"><span class="inner"><span class="letter">//</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">h</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">o</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">m</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">e</span></span></span>
+                        </a>
+                        <a href="#about" class="word fancy">
+                            <span class="outer"><span class="inner"><span class="letter">//</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">a</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">b</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">o</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">u</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">t</span></span></span>
+                        </a>
+                    </div>
+
+                    <div class="line">
+                        <a href="wip.html" target="_blank" class="word fancy">
+                            <span class="outer"><span class="inner"><span class="letter">//</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">g</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">a</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">m</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">e</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">s</span></span></span>
+                        </a>
+                        <a href="wip.html" target="_blank" class="word fancy">
+                            <span class="outer"><span class="inner"><span class="letter">//</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">m</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">u</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">s</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">i</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">c</span></span></span>
+                        </a>
+                        <a href="wip.html" target="_blank" class="word fancy">
+                            <span class="outer"><span class="inner"><span class="letter">//</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">b</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">l</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">o</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">g</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">s</span></span></span>
+
+                        </a>
+                    </div>
+
+                    <div class="line">
+                        <a href="wip.html" target="_blank" class="word fancy">
+                            <span class="outer"><span class="inner"><span class="letter">//</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">p</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">r</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">o</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">j</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">e</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">c</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">t</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">s</span></span></span>
+                        </a>
+                        <a href="https://youtube.com/@axviii3" target="_blank" class="word fancy">
+                            <span class="outer"><span class="inner"><span class="letter">//</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">y</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">o</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">u</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">t</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">u</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">b</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">e</span></span></span>
+                        </a>
+                    </div>
+
+                    <div class="line">
+                        <a href="wip.html-" target="_blank" class="word fancy">
+                            <span class="outer"><span class="inner"><span class="letter">//</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">s</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">o</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">c</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">i</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">a</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">l</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">s</span></span></span>
+                        </a>
+                        <a href="#contact"_blank" class="word fancy">
+                            <span class="outer"><span class="inner"><span class="letter">//</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">C</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">o</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">n</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">t</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">a</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">c</span></span></span>
+                            <span class="outer"><span class="inner"><span class="letter">t</span></span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Landing/Hero Section -->
+    <section id="landing">
+        <div id="left-side" class="side">
+            <h2 class="title">
+                <span class="hiText">Hi! I'm AXVIII3.</span>
+                <br> I am a <br>
+                <span class="typed1"></span>
+            </h2>
+            <span class="dragIcon"><i class="fas fa-arrows-h"></i></span>
+        </div>
+        <div id="right-side" class="side">
+            <h2 class="title">
+                <span class="hiText">Hi! I'm AXVIII3.</span>
+                <br> I am a <br>
+                <span class="typed2"></span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="title">about(me);</h2>
+        <div>
+            <div class="content">
+                <p>Hello guys.. welcome to my minecraft lets play.......</p>
+                <p>No, but seriously... hey there! I am AXVIII3, your friendly neighbourhood computer guy. 
+                                Also, I am an expert at sucking in developing, graphic designing, animating, modelling, music producing aaand..... 
+                                yeah that's it. <br>I can do a lot of stuff as I am a student who wants to learn every single thing 
+                                computer. However, I am not too good at most of the stuff and am refining my skills continuously. 
+                                <br>Thats all about me. Or is it?</p>
+                <p>I'm always looking for opportunities to collaborate and connect with other creators, so reach out to
+                    me on Discord if you're interested in
+                    working together. Thanks for visiting, and I hope you enjoy my content!</p>
+                <p>Smile :)</p>
+            </div>
+            <div class="content">
+                <div class="macbook">
+                    <div class="inner">
+                        <div class="screen">
+                            <div class="face-one">
+                                <div class="camera"></div>
+                                <div class="display">
+                                    <div class="shade"></div>
+                                </div>
+                                <span></span>
+                            </div>
+                            <img src="MEDIA/IMAGES/Branding/Smiley Orange.png" alt=":)" class="logo" />
+                        </div>
+                        <div class="body">
+                            <div class="face-one">
+                                <div class="touchpad">
+                                </div>
+                                <div class="keyboard">
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key space"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                    <div class="key f"></div>
+                                </div>
+                            </div>
+                            <div class="pad one"></div>
+                            <div class="pad two"></div>
+                            <div class="pad three"></div>
+                            <div class="pad four"></div>
+                        </div>
+                    </div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="title"></h2>
+        <div>
+            <div class="background">
+                <div class="container">
+                    <div class="screen">
+                        <div class="screen-header">
+                            <div class="screen-header-left">
+                                <div class="screen-header-button close"></div>
+                                <div class="screen-header-button maximize"></div>
+                                <div class="screen-header-button minimize"></div>
+                            </div>
+                            <div class="screen-header-right">
+                                <div class="screen-header-ellipsis"></div>
+                                <div class="screen-header-ellipsis"></div>
+                                <div class="screen-header-ellipsis"></div>
+                            </div>
+                        </div>
+                        <div class="screen-body">
+                            <div class="screen-body-item left">
+                                <div class="app-title">
+                                    <span>contact ( ) {</span>
+                                    <span>me; }</span>
+                                </div>
+                            </div>
+                            <div class="screen-body-item">
+                                <div class="app-form">
+                                    <div class="app-form-group">
+                                        <input class="app-form-control" placeholder="NAME">
+                                    </div>
+                                    <div class="app-form-group">
+                                        <input class="app-form-control" placeholder="EMAIL">
+                                    </div>
+                                    <div class="app-form-group">
+                                        <input class="app-form-control" placeholder="CONTACT NO">
+                                    </div>
+                                    <div class="app-form-group message">
+                                        <input class="app-form-control" placeholder="MESSAGE">
+                                    </div>
+                                    <div class="app-form-group buttons">
+                                        <button class="app-form-button">CANCEL</button>
+                                        <button class="app-form-button">SEND</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
 </html>

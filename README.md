@@ -1,2 +1,2 @@
-# axviii3.github.io
-Redirect to my website from my third domain
+# axviii3.is-a.dev
+The official online lair of AXVIII3.
