@@ -75,6 +75,7 @@ body {
 }
 
 .content-title {
+    margin: 5px;
     font-size: 12vmin;
     line-height: 1.4;
 }
@@ -109,4 +110,10 @@ body {
 
 .background.down-scroll+.background:not(.down-scroll) .content-wrapper {
     transform: translateY(15vh);
+}
+
+@media only screen and (max-width: 768px){
+    ..content-title {
+        font-size: 8vmin;
+    }
 }
