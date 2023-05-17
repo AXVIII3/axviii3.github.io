@@ -115,5 +115,6 @@ body {
 @media only screen and (max-width: 768px){
     ..content-title {
         font-size: 8vmin;
+        margin-bottom: 25px;
     }
 }
