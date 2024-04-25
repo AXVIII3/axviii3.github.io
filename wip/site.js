@@ -1,15 +1,3 @@
-var typed1_options = {
-    strings: ['Game Developer.', 'Web Developer.', 'Graphic Designer.', 'Music Producer.', 'Computer Enthusiast.'],
-    typeSpeed: 30,
-    backSpeed: 30,
-    startDelay: 1000,
-    backDelay: 1000,
-    showCursor: true,
-    loop: true
-};
-var typed1 = new Typed('.typed', typed1_options);
-
-
 // ------------- VARIABLES ------------- //
 let ticking = false;
 const isFirefox = (/Firefox/i.test(navigator.userAgent));
@@ -18,6 +6,7 @@ const scrollSensitivitySetting = 30; //Increase/decrease this number to change s
 const slideDurationSetting = 600; //Amount of time for which slide is "locked"
 let currentSlideNumber = 0;
 const totalSlideNumber = $(".background").length;
+
 // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
 function parallaxScroll(event)
 {
@@ -81,6 +70,7 @@ function touchEnd(evt)
     endY = evt.changedTouches[0].clientY;
     parallaxScroll(evt);
 }
+
 // ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
 function slideDurationTimeout(slideDuration)
 {
@@ -89,11 +79,13 @@ function slideDurationTimeout(slideDuration)
         ticking = false;
     }, slideDuration);
 }
+
 // ------------- ADD EVENT LISTENER ------------- //
 const mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
 window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
 window.addEventListener("touchstart", touchStart, false);
 window.addEventListener("touchend", touchEnd, false);
+
 // ------------- SLIDE MOTION ------------- //
 function nextItem()
 {
