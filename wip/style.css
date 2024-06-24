@@ -38,7 +38,7 @@ body {
 }
 
 .background:first-child {
-	background: #1A181F;
+	background: #1a181f;
 	transform: translateY(-15vh);
 	z-index: 3;
 }
@@ -48,12 +48,12 @@ body {
 }
 
 .background:nth-child(2) {
-	background: #F0B28D;
+	background: #f0b28d;
 	z-index: 2;
 }
 
 .background:nth-child(3) {
-	background: #BEA7A8;
+	background: #bea7a8;
 	z-index: 1;
 }
 
