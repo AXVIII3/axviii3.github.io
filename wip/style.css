@@ -39,6 +39,7 @@ body {
 
 .background:first-child {
 	background: #1a181f;
+	color: #f4e1d5;
 	transform: translateY(-15vh);
 	z-index: 3;
 }
@@ -49,11 +50,13 @@ body {
 
 .background:nth-child(2) {
 	background: #f0b28d;
+	color: #09090a;
 	z-index: 2;
 }
 
 .background:nth-child(3) {
 	background: #bea7a8;
+	color: #09090a;
 	z-index: 1;
 }
 
@@ -64,7 +67,6 @@ body {
 	justify-content: center;
 	text-align: left;
 	flex-flow: column nowrap;
-	color: #ffffff;
 	font-family: sans-serif;
 	transform: translateY(40vh);
 	will-change: transform;
